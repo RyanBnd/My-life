@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - My Personal Journey</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function validateForm() {
+      const name = document.forms["contactForm"]["name"].value;
+      const email = document.forms["contactForm"]["email"].value;
+      const message = document.forms["contactForm"]["message"].value;
+      if (name === "" || email === "" || message === "") {
+        alert("Please fill in all fields.");
+        return false;
+      }
+      alert("Message sent successfully!");
+      return true;
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="childhood.html">Childhood</a> |
+      <a href="education.html">Education</a> |
+      <a href="skills.html">Skills</a> |
+      <a href="future.html">Future</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Let's Connect</h2>
+      <p>Feel free to reach out through my social media platforms.</p>
+
+      <form name="contactForm" onsubmit="return validateForm()" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Send Message">
+      </form>
+
+      <h3>Connect</h3>
+     <ul>
+  <li>Email: <a href="mailto:brianwkioko@gmail.com">brianwkioko@gmail.com</a></li>
+  <li>Instagram: <a href="https://instagram.com/bandanafather" target="_blank">@bandanafather</a></li>
+  <li>Twitter: <a href="https://twitter.com/bandanafather" target="_blank">@bandanafather</a></li>
+  <li>GitHub: <a href="https://github.com/RyanBnd" target="_blank">github.com/RyanBnd</a></li>
+</ul>
+ </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Life Journey | Born in Kenya</p>
+  </footer>
+
+</body>
+</html>
